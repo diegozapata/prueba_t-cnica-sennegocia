@@ -1,0 +1,26 @@
+
+ <h3>Edita usuario</h3>
+                   
+        <div class="form-group">
+            <input type="text" class="form-control" name="nombre" placeholder="Nombre " ng-model="$ctrl.usuario2.username" />
+             <input type="hidden" class="form-control" name="id" placeholder="id" ng-model="$ctrl.usuario2.id" />
+
+         </div>
+        <div class="form-group">
+           <input type="text" class="form-control" name="usuario" placeholder="Nombre de session" ng-model="$ctrl.usuario2.name" />
+        </div>
+         <div class="form-group">
+            <input type="text" class="form-control" name="email" placeholder="Email" ng-model="$ctrl.usuario2.email" />
+         </div>
+         <div class="form-group">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="/proyecto_crud/index.html" class="btn btn-danger"> Cancelar</a>
+                                 
+                </div>
+                <div class="col-md-3">
+                    <input type="button" class="btnSubmit btn btn-success" ng-click="$ctrl.updateUser()"  value="Editar" /> 
+                </div>
+            </div>
+                            
+        </div>
